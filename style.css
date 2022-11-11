@@ -1,0 +1,31 @@
+.container {
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+.container .title {
+  color: green;
+  grid-column: span 4;
+  border-bottom: 2px solid blue;
+}
+.container .articles {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  text-align: center;
+}
+.container .articles .article:nth-child(odd) .item {
+  color: blue;
+}
+.container .articles .item {
+  border: 2px solid green;
+  width: auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 24px;
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

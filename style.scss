@@ -1,0 +1,41 @@
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+$font-size: 24px;
+
+
+.container{
+    border: 2px solid $color-primary;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    
+        .title {
+            color: $color-tertiary;
+            grid-column: span 4;
+            border-bottom: 2px solid $color-secondary;
+            
+        }
+        .articles {
+            grid-column: span 4;
+            display: flex;
+            flex-direction: row;
+            padding: 1em;
+            text-align: center;
+            .article:nth-child(odd) .item {
+                color: $color-secondary;
+            }
+            .item {
+                border: 2px solid $color-tertiary;
+                width: auto;
+                padding: 1rem;
+                text-align: center;
+                font-size: $font-size;
+                color: $color-primary;
+                
+                
+            }
+
+        }
+    }
+    
